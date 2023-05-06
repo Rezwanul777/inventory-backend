@@ -7,5 +7,5 @@ const OTPschema=mongoose.Schema({
     createdDate:{type:Date,default:Date.now()}
 },{versionKey:false})
 
-const OTPSModel=mongoose.model('otp',OTPschema)
+const OTPSModel=mongoose.model('otps',OTPschema)
 module.exports = OTPSModel;

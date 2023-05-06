@@ -1,4 +1,4 @@
-const updateService=async(Request,DataModel)=>{
+const UserupdateService=async(Request,DataModel)=>{
     try {
         //email has been paased in headers
      let data=await DataModel.updateOne({email: Request.headers['email']}, Request.body)
@@ -8,4 +8,4 @@ const updateService=async(Request,DataModel)=>{
     }
 }
 
-module.exports=updateService
+module.exports=UserupdateService
